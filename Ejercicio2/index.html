@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 2 - Curso HTML & CSS</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form id="miFormulario" method="POST" action="#">
+        <label for="nombre"> Nombre:
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z]+" placeholder="Escribe aquí tu nombre"/>
+        </label>
+        <label for="apellido"> Apellido:
+            <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z]+" placeholder="Escribe aquí tu apellido"/>
+        </label>
+        <label for="email"> Email:
+            <input type="email" id="email" name="email" required placeholder="Escribe aquí tu email"/>
+        </label>
+        <label for="telefono"> Teléfono:
+            <input type="tel" id="telefono" name="email" required pattern="[0-9]+" placeholder="Escribe aquí tu teléfono"/>
+        </label>
+        <label for="direccion"> Dirección:
+            <input type="text" id="direccion" name="direccion" placeholder="Escribe aquí tu dirección"/>
+        </label>
+        <input type="submit" value="Enviar Formulario"/>
+    </form>
+
+    <h1>Tabla</h1>
+
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Ciudad / País</td>
+                <th>España</th>
+                <th>Argentina</th>
+                <th>México</th>
+            </tr>
+            <tr>
+                <td> Córdoba </td>
+                <th rowspan="2">Sí</th>
+                <th colspan="2">Sí</th>
+            </tr>
+            <tr>
+                <td> Málaga </td>
+                <th>No</th>
+                <th>Sí</th>
+            </tr>
+            <tr>
+                <td> S.S de Jujuy </td>
+                <th>No</th>
+                <th>Sí</th>
+                <th>No</th>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
